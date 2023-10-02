@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+
+</head>
+<style>
+
+@media only screen and (min-width: 600px){
+
+    .box1{
+        width: 100%;
+
+
+    }
+    
+}
+
+.box1{
+    height: 300px;
+    width: 600px;
+    border: 1px solid black;
+    background-color: rgb(231, 115, 115);
+
+}
+.box2{
+    height: 150px;
+    width: 600px;
+    border-bottom: 1px solid red;
+    background-color: bisque;
+
+}
+.box3{
+    height: 75px;
+    width: 75px;
+    animation: xyz;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes xyz{
+    0%{
+        background-color: aqua;
+        transform: translate(0px,0px);
+
+    }
+25%{
+    background-color: brown;
+    transform: translate(75px,0px);
+}
+50%{
+    background-color: blue;
+    transform: translate(75px,75px);
+}
+75%{
+    background-color: chartreuse;
+    transform: translate(0px,75px);
+}
+100%{background-color: black;
+    transform: translate(0px,0px);
+    
+
+}
+
+
+
+}
+
+</style>
+<body>
+    <div class="box1">
+        <div class="box2">   
+             <div class="box3"></div>
+    </div>
+    </div>
+    
+
+</body>
+</html>
